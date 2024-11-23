@@ -1,74 +1,23 @@
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
-
-import { EffectCoverflow,  Navigation} from 'swiper/modules';
-
-
-
+import {  Slider } from "./components";
 
 function App() {
   return (
     <>
-      <div className='flex flex-col justify-center items-center '>
+     
 
-         <div className='flex flex-col gap-[24px]   justify-center items-center m-[48px]'>
-         <h1>Animals Gallery</h1>
+      <div className="flex flex-col gap-[16pxpx] items-center justify-center m-[24px]">
+          
+          <div className="flex flex-col gap-[4px] items-center justify-center">
+              <p className="text-[24px] font-sans font-bold text-[#1b1b1b]">Animals Gallery</p>
+              <p className="text-[16px] font-sans text-[#3b3b3b]">The best collection of nature’s most incredible creatures</p>
+          </div>
 
-         <Swiper
-         className=' flex rounded-[40px] overflow-hidden w-[1200px] items-center'
-         effect={'coverflow'}
-         grabCursor={true}
-         centeredSlides={true}
-         loop= {true}
-         slidesPerView= {4}
-         coverflowEffect= {{
-          rotate: 0,
-          stretch: 0,
-          depth: 180,
-          modifier: 2.5,
-          slideShadows: true,
-        }
-
-         }
-         navigation={true}
-         modules={[EffectCoverflow, Navigation]}
-         
-         > 
-           
-               <SwiperSlide className='rounded-[40px] overflow-hidden   '  >
-                  <img src = "/assets/images/dog.jpg"  alt='dog'/>
-               </SwiperSlide>
-
-               <SwiperSlide className='rounded-[40px] overflow-hidden '>
-                  <img src = "/assets/images/cat.jpg"  alt='cat'/>
-               </SwiperSlide>
-
-               <SwiperSlide className='rounded-[40px] overflow-hidden '>
-                  <img src = "/assets/images/tiger.jpg"   alt='dog'/>
-               </SwiperSlide>
-
-               <SwiperSlide className='rounded-[40px] overflow-hidden '>
-                  <img src = "/assets/images/dog.jpg"  alt='dog'/>
-               </SwiperSlide>
-
-               <SwiperSlide className='rounded-[40px] overflow-hidden '>
-                  <img src = "/assets/images/dog.jpg"  alt='dog'/>
-               </SwiperSlide>
-
-
-            
-           
-           
-
-         </Swiper>
-         </div>
-
+          <Slider/>
       </div>
+      
+
+     
+     
       
     </>
   );
