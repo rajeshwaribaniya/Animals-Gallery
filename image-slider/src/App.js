@@ -14,11 +14,7 @@ function App() {
 
           <Slider/>
       </div>
-      
-
-     
-     
-      
+        
     </>
   );
 }
@@ -62,35 +58,3 @@ export default App;
 // A deeper sense of Z-axis separation.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  {/* slider controller */}
-//  <div>
-//  {/* back arrow icon */}
-//  <div>
-//     <img src='assets/icons/backarrow.svg' />
-//  </div>
-
-//  {/* next arrow icon */}
-//  <div>
-//     <img src='assets/icons/nextarrow.svg' />
-//  </div>
-
-// </div>
